@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learnings</title>
+</head>
+<body>
+    <header>
+        <h1><p>Data Structure</p></h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Data Types</h2>
+                <p>Em python, existem alguns tipos de datas que servem para propósitos específicos:</p>
+            </div>
+            <div>
+                <h2>Listas [..., ..., ...,]</h2>
+                <p>
+                    Lista é uma coleção <b>mutável</b> e <b>ordenada</b> de elementos. Elas são delimitadas por colchetes e seus elementos são separados por vírgulas. Em Python é permitdo que diferentes tipos de dados possam ser armazenados simultaneamente em uma mesma lista.
+                </p>
+                <p>
+                    Os elementos de uma lista são definidos por um <b><i>índice</i></b>, em python, inicia-se por 0. Também há a indexação negativa, onde <i>-1</i> signica o <i>último</i> elemento, <i>-2</i> o <i>penúltimo</i>, e assim por diante.
+                </p>
+                <p>Para a lista (tipo de data), temos alguns métodos, sendo eles:</p>
+                <ul>
+                    <li>
+                        <code><p>list.<b>append</b>(value, /..)</p></code>
+                        <p>
+                            Adiciona um item ao fim da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>extend</b>(iterable, /..)</p></code>
+                        <p>
+                            Extende a lista, adicionando-a todos os itens de uma determinada variável.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>insert</b>(index, value, /..)</p></code>
+                        <p>
+                            Adiciona um item em uma determinada posição da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>remove</b>(value, /..)</p></code>
+                        <p>
+                            Remove o primeiro item da lista cujo valor seja igual à <i>value</i>. Devolve um <i>'ValueError'</i> se não houver tal item na lista. 
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>pop</b>(index=-1, /..)</p></code>
+                        <p>
+                            Remove o item em dada posição da lista, e retorna-o. Se um index não for especificado, .pop() remove e retorna o <b>último</b> item da lista. Devolve um <i>'IndexError'</i> se a lista está vazia ou o index está foram do alcançe da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>clear</b>()</p></code>
+                        <p>
+                            Remove todos os itens da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>index</b>(value[, start[, stop]])</p></code>
+                        <p>
+                            Retorna um index de base 0 da primeira ocorrência do valor na lista. Retorna um <i>'ValueError'</i> se tal item não existe.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>count</b>(value, /..)</p></code>
+                        <p>
+                            Retorna o número de vezes que determinado valor aparece na lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>sort</b>(*, key=None, reverse=False)</p></code>
+                        <p>
+                            Organiza os itens da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>reverse</b>()</p></code>
+                        <p>
+                            Inverte os elementos da lista.
+                        </p>
+                    </li>
+                    <li>
+                        <code><p>list.<b>copy</b>()</p></code>
+                        <p>
+                            Retorna uma cópia da lista.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Tuples and Sequences</h2>
+                <p>
+                    Embora não seja obrigatório, tuplas são criadas com parênteses, e significam um conjunto imutável de dados
+                </p>
+            </div>
+            <div>
+                <h2>Sets (conjuntos)</h2>
+                <p>É uma coleção sem ordem e que não aceita duplicatas.</p>
+                <p>Alguns métodos são:</p>
+                <ul>
+                    <li>
+                        <h2>remove()</h2>
+                        <p>Gera erro se o valor não for encontrado</p>
+                    </li>
+                    <li>
+                        <h2>discard()</h2>
+                        <p>Não gera erro se o valor não for encontrado</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Mappings (dicionário)</h2>
+                <p>Dicionários são indexados por chaves(keys), imagine como se fossem rótulos para os valores.</p>
+                <p>Alguns operadores são:</p>
+                <ul>
+                    <li>
+                        <h2>keys()</h2>
+                        <p>Retorna todas as chaves de um dicionário</p>
+                    </li>
+                    <li>
+                        <h2>values()</h2>
+                        <p>Retorna todos os valores de um dicionário</p>
+                    </li>
+                    <li>
+                        <h2>items()</h2>
+                        <p>Retorna todos os conjuntos chave-valor de um dicionário</p>
+                    </li>
+                    <li>
+                        <h2>get()</h2>
+                        <p>Retorna um valor padrão se determinada chave não existir</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>Built-in Types</h1>
+                <p>Os principais são: numéricos, sequenciais, dicionários, instâncias e exceções.</p>
+            </div>
+            <div>
+                <h2>Tipos Numéricos</h2>
+                <ul>
+                    <li>
+                        <p>int</p>
+                    </li>
+                    <li>
+                        <p>float</p>
+                    </li>
+                    <li>
+                        <p>complex</p>
+                    </li>
+                </ul>
+                <h2>Tipo Booleano</h2>
+                <p>
+                    O boolean é um subtipo de int, pois ele só pode assumir dois valores, True ou False.
+                </p>
+            </div>
+            <div>
+                <h2>Tipos sequenciais</h2>
+                <p>São variáveis que podem ser mutáveis ou imutáveis, e são divididos em três principais:</p>
+                <ul>
+                    <li>
+                        <h2>list[]</h2>
+                        <p>São sequências mutáveis, e podem ser constrídas de diversas formas:</p>
+                        <ul>
+                            <li>Usando colchetes [] para denotar uma lista vazia, ou com valores separados por vírgulas [..., ..., ...]</li>
+                            <li>Ou usando um construtor de tipos: list()</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Tuples()</h2>
+                        <p>
+                            São sequências imutáveis, e podem ser construidos com:
+                        </p>
+                        <ul>
+                            <li>Uso de parentêses () para denotar uma tupla vazia, ou com valores separados por vírgulas (..., ..., ...), para se criar uma tupla com um único valor adiciona-se uma virgula após o valor (...,)</li>
+                            <li>Ou usando um construtor de tipos: list()</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Range</h2>
+                        <p>
+                            o tipo Range representa uma sequência imutáveis de números, e é comumente utilizada para circular uma número específico de vezes em um laço for. 
+                        </p>
+                        <p>range (stop, /..)</p>
+                        <p>range(start, stop, step=1, /..)</p>
+                        <p>A vantagem de range é que ele ocupa sempre a mesma (pequena) quantidade de memória, não importando o tamanho do seu alcance, já que ele somente guarda os valores de inicio, fim, e step.</p>
+                    </li>
+                </ul>
+                <p>Como uma subdivisão dos tipos sequênciais, temos os tipos textuais e binários:</p>
+                <ul>
+                    <li>
+                        <h2>Text Sequence Type</h2>
+                        <p>É um tipo de variável imutável, e é manejado através de strings</p>
+                    </li>
+                    <li>
+                        <h2>Binary Sequence Type</h2>
+                        <p>É usado para manipular informação binária através do bytes, bytearray e memoryview</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Set (conjuntos) Types{}</h2>
+                <p>
+                    Set é um objeto sem ordem, e é uma coleção de diferentes objetos "hashable". Removem duplicatas de uma sequencia e aceitam operações matemáticas como interseção, união e etc. Existem dois tipos:
+                </p>
+                <ul>
+                    <li>
+                        <h2>set</h2>
+                        <p>Esse é mutável, e portantanto não hashable, através de métodos como add() ou remove()</p>
+                    </li>
+                    <li>
+                        <h2>frozenset</h2>
+                        <p>
+                            Esse é imutável e hashable.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Sets podem ser criados de diversas fórmas:
+                </p>
+                <ul>
+                    <li>
+                        <p>Usando elementos separados por vígulas dentro de chaves {}</p>
+                    </li>
+                    <li>
+                        <p>Usando o construtor de tipo set()</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Mapping (dicionário) Type{:}</h2>
+                <p>Usado para mapear valores hashable parar objetos arbitrários, atualmente só existe um tipo que é o dict</p>
+                <p>Ele é criado através de pares de valores separados por vígulas dentro de chaves {key:value, key:value, ...:...}</p>
+                <p>Ou tilizando o construtor dict()</p>
+                <p>É como se fosse uma lista, onde cada valor també é atribuido a uma chave, ou seja, um valor arbitrário, como se fosse uma espécie de rótulo para aquele valor, por isso chama-se dicionário</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

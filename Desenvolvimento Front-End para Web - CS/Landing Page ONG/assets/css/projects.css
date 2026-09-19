@@ -1,0 +1,148 @@
+body {
+    margin-top: 13vh;
+}
+
+.about {
+    background-color: var(--branco);
+    position: relative;
+
+    padding: 1rem 2rem;
+
+    z-index: 2;
+
+    p {
+        font-size: var(--p);
+        padding: 0 2rem;
+        text-align: justify;
+    }
+
+    section {
+        padding: 0 0 0 2rem;
+        text-align: justify;
+
+        h2{
+            font-size: var(--h2);
+            color: var(--azul-escuro);
+        }
+    }
+
+}
+
+.grid-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-inline: 2rem;
+
+    .grid-cards {
+        display: grid;
+    
+        grid-template-columns:
+            repeat(12, 1fr);
+    
+        gap: 1.5rem;
+    
+        width: 100%;
+        
+        section {
+            grid-column: span 4;
+
+            padding: 1.5rem;
+            border-radius: 15px;
+            color: var(--branco);
+            overflow: hidden;
+
+            h2 {
+                font-size: var(--h2);
+                color: var(--branco);
+            }
+            
+            &::before {
+                content: "";
+                
+                display: block;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                
+                background-position: center;
+                
+                filter: blur(2px);
+                transform: scale(1.05);
+                z-index: -1;
+            }
+            
+            p::before {
+                content: "";
+                display: flex;
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                background-image: linear-gradient(to top, var(--azul-escuro), rgba(255, 253, 253, 0.168));
+            }
+
+            p{
+                padding: 0 0 0 1rem;
+            }
+        }
+        
+        #psicologia {
+            background-image: radial-gradient(circle,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 93%), url("../images/psicologia.avif");background-size: cover;
+            
+        }
+        
+        #enfermagem {
+            background-image: url("../images/enfermagem.avif");background-size: cover;
+            
+        }
+        
+        #fisioterapia {
+            background-image: url("../images/fisioterapia.avif");background-size: cover;
+            
+        }
+        
+        #nutricao {
+            background-image: radial-gradient(circle,rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 93%), url("../images/nutricao.avif");background-size: cover;
+            
+        }
+        
+        #assist-soc {
+            background-image: radial-gradient(circle,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 93%), url("../images/assit_social.avif");background-size: cover;
+            
+        }
+        
+        #assist-med {
+            background-image: radial-gradient(circle,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 93%), url("../images/assit_medica.avif");background-size: cover;
+            
+        }
+        
+        & > * {
+            position: relative;
+            z-index: 50;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .grid-size {
+        .grid-cards section{
+            grid-column: span 6;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    body {
+        margin-top: 11vh;
+    }
+}
+
+@media (max-width: 690px) {
+    .grid-size {
+        .grid-cards section{
+            grid-column: span 12;
+        }
+    }
+}
