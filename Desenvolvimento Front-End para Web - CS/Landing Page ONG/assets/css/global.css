@@ -112,6 +112,15 @@ header {
     display: none;
 }
 
+.spa-view[hidden] {
+    display: none;
+}
+
+#form-status {
+    color: var(--cor-sucesso);
+    text-align: center;
+}
+
 footer {
     background-image: linear-gradient(to top, var(--azul-escuro), var(--azul-medio) 90%);
     color: var(--branco);
