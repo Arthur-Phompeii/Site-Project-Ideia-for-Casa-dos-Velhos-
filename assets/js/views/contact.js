@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/e7ba23_7c6498bdb920437ea8996a505d918b7c%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/e7ba23_7c6498bdb920437ea8996a505d918b7c%7Emv2.png" type="image/png">
-    <link rel="shortcut icon" href="https://static.wixstatic.com/media/e7ba23_7c6498bdb920437ea8996a505d918b7c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/e7ba23_7c6498bdb920437ea8996a505d918b7c%7Emv2.png" type="image/png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS próprio -->
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-
-    <title>Página de Contatos</title>
-</head>
-<body>
-    <header>
-        <div class="withdraw-container">
-            <img src="assets/images/logo.avif" alt="Logotipo da instituição, possuindo um coração entrelaçado com uma casa." class="logo-recolhido">
-            <img src="assets/images/logo_extenso.jpg" alt="Logotipo da instituição, possuindo um coração entrelaçado com uma casa." class="logo-extenso">
-            <div class="menu-btn"></div>
-        </div>
-        <nav class="visibility">
-            <ul class="orientation">
-                <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#funcionamento">Funcionamento</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="about">
+export default String.raw`<section class="about">
             <div class="text-decoration">
                 <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
                 <h1>Informações de Contato e Localização</h1>
@@ -75,7 +36,7 @@
             </div>
             <p>Para a realização de algumas atividades, solicitação de acolhimento de idoso, voluntariado, pedimos que entrem em contato conosco através do formulário abaixo. Basta selecionar a opção correspondente e preencher os dados solicitados.</p>
             <div class="form-container">
-                <form>
+                <form id="contact-form">
                     <fieldset>
                         <legend for="categoria">Categoria</legend>
                         <div class="radio-group">
@@ -104,7 +65,7 @@
                                 </div>
                                 <div class="campo">
                                     <label for="celular">Celular:</label>
-                                    <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" inputmode="tel" autocomplete="tel" maxlength="11" pattern="[0-9]{11}" required>
+                                    <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" inputmode="tel" autocomplete="tel" maxlength="15" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
                                 </div>
                                 <div class="campo">
                                     <label for="email">E-mail:</label>
@@ -125,10 +86,4 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-        </section>
-    </main>
-    <footer>   
-        <p>&copy; 2026 Casa dos Velhos Irmã Alice.</p>
-    </footer>
-</body>
-</html>
+        </section>`

@@ -68,7 +68,7 @@ body {
     h3 {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
-        color: var(--branco);
+        color: var(--branco) !important;
     }
 
     h4 {
