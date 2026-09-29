@@ -1,6 +1,8 @@
+import text_decoration from "../../images/text_decoration.avif";
+
 export default String.raw`<section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Informações de Contato e Localização</h1>
             </div>
             <p>Se você quiser saber mais sobre a instituição ou fazer uma doação, entre em contato conosco através das informações abaixo:</p>
@@ -31,12 +33,12 @@ export default String.raw`<section class="about">
         </section>
         <section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Envio de Solicitação de Contato</h1>
             </div>
             <p>Para a realização de algumas atividades, solicitação de acolhimento de idoso, voluntariado, pedimos que entrem em contato conosco através do formulário abaixo. Basta selecionar a opção correspondente e preencher os dados solicitados.</p>
             <div class="form-container">
-                <form>
+                <form id="contact-form">
                     <fieldset>
                         <legend for="categoria">Categoria</legend>
                         <div class="radio-group">
@@ -65,7 +67,7 @@ export default String.raw`<section class="about">
                                 </div>
                                 <div class="campo">
                                     <label for="celular">Celular:</label>
-                                    <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" inputmode="tel" autocomplete="tel" maxlength="11" pattern="[0-9]{11}" required>
+                                    <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" inputmode="tel" autocomplete="tel" maxlength="15" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
                                 </div>
                                 <div class="campo">
                                     <label for="email">E-mail:</label>
@@ -86,4 +88,4 @@ export default String.raw`<section class="about">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-        </section>`;
+        </section>`

@@ -1,10 +1,12 @@
+import text_decoration from "../../images/text_decoration.avif";
+
 export default String.raw`<section id="presentation">
             <h1>Casa Dos Velhos Irmã Alice</h1>
             <p>Uma história de amor.</p>
         </section>
         <section class="about" id="us">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h2>Quem Somos</h2>
             </div>
             <p>Álvaro de Azambuja Cardozo (Capitão Cardozo) e sua esposa Alice, formavam um casal com fortes e sinceros ideais de amor e fraternidade. A intenção deste casal era montar uma instituição de caridade onde fossem abrigados idosos carentes, porém, não possuíam condições financeiras para tal empreendimento.</p> 
@@ -14,7 +16,7 @@ export default String.raw`<section id="presentation">
         </section>
         <section class="about" id="funcionamento">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h2>Funcionamento</h2>
             </div>
             <h3>Quem Atendemos</h3>
@@ -25,4 +27,4 @@ export default String.raw`<section id="presentation">
                 <li>Sem condições econômicas de subsistência de forma digna</li>
                 <li>Sem relações normais com familiares próximos que pudessem fornecer suporte financeiro, social e emocional compatíveis com as necessidades do idoso</li>
             </ul>
-        </section>`;
+        </section>`

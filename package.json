@@ -1,0 +1,28 @@
+{
+  "name": "landing-page-ong",
+  "version": "1.0.0",
+  "description": "Website for an ONG",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur-Phompeii/Site-Project-Ideia-for-Casa-dos-Velhos-.git"
+  },
+  "keywords": [
+    "ONG",
+    "Website"
+  ],
+  "author": "Arthur",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Arthur-Phompeii/Site-Project-Ideia-for-Casa-dos-Velhos-/issues"
+  },
+  "homepage": "https://github.com/Arthur-Phompeii/Site-Project-Ideia-for-Casa-dos-Velhos-#readme",
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}
