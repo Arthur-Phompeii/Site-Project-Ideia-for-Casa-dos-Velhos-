@@ -27,7 +27,7 @@ const routes = {
 let activeView;
 
 /* Carrega um CSS específico */
-function carregarCSS(nome) {
+/* function carregarCSS(nome) {
     const id = `css-${nome}`;
 
     if (document.getElementById(id)) {
@@ -41,6 +41,19 @@ function carregarCSS(nome) {
     link.href = `./assets/css/${nome}.css`;
 
     document.head.appendChild(link);
+} */
+const estilos = {
+    home: () => import("../css/home.css"),
+    contact: () => import("../css/contact.css"),
+    projects: () => import("../css/projects.css")
+};
+
+async function carregarCSS(nome) {
+    if (!estilos[nome]) {
+        throw new Error(`CSS "${nome}" não encontrado.`);
+    }
+
+    await estilos[nome]();
 }
 
 /* Configura o formulário de contato */

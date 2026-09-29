@@ -1,6 +1,8 @@
+import text_decoration from "../../images/text_decoration.avif";
+
 export default String.raw`<section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Cuidados com os Idosos</h1>
             </div>
             <p>A casa oferece diferentes tipos de cuidados para os idosos aqui internados. Uma vez conosco e o idoso possui acesso à:</p>
@@ -35,7 +37,7 @@ export default String.raw`<section class="about">
         </section>
         <section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Bazar Solidário</h1>
             </div>
             <p>A Casa dos Velhos organiza um bazar com produtos de doação destinado à arrecadação financeira para o mantimento da instituição. A maioria dos itens são oferecidos com destino ao próprio bazar, já outros são produtos que foram doados aos idosos mas que estes não podem fazer uso.</p>
@@ -44,7 +46,7 @@ export default String.raw`<section class="about">
         </section>
         <section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Eventos</h1>
             </div>
             <p>A casa organiza diversos eventos para promover a tanto a integração social, o lazer e o bem-estar dos idosos quanto para arrecadar recursos para a instituição. Alguns eventos são abertos ao público, e através deles conseguimos engajar a comunidade e divulgar nossa causa.</p>
@@ -53,7 +55,7 @@ export default String.raw`<section class="about">
         </section>
         <section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Doações e Voluntariado</h1>
             </div>
             <p>A nossa instituição depende muito das doações e do voluntariado para manter suas atividades. Se você deseja contribuir, pode fazer uma doação ou se voluntariar para ajudar os idosos.</p>

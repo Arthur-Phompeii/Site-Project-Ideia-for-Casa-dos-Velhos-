@@ -1,6 +1,8 @@
+import text_decoration from "../../images/text_decoration.avif";
+
 export default String.raw`<section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Informações de Contato e Localização</h1>
             </div>
             <p>Se você quiser saber mais sobre a instituição ou fazer uma doação, entre em contato conosco através das informações abaixo:</p>
@@ -31,7 +33,7 @@ export default String.raw`<section class="about">
         </section>
         <section class="about">
             <div class="text-decoration">
-                <img src="./assets/images/text_decoration.avif" alt="Decoração textual em formato de coração.">
+                <img src="${text_decoration}" alt="Decoração textual em formato de coração.">
                 <h1>Envio de Solicitação de Contato</h1>
             </div>
             <p>Para a realização de algumas atividades, solicitação de acolhimento de idoso, voluntariado, pedimos que entrem em contato conosco através do formulário abaixo. Basta selecionar a opção correspondente e preencher os dados solicitados.</p>
